@@ -16,7 +16,6 @@ export class TaskService {
   constructor() {
     // Effect que salva automaticamente no LocalStorage sempre que o Signal mudar
     effect(() => {
-      // localStorage.setItem('tasks', JSON.stringify(this.tasksSignal()));
       this.storage.setItem('tasks', JSON.stringify(this.tasksSignal()));
     });
   }

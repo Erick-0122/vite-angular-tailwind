@@ -1,15 +1,3 @@
-/*import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
-@Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
-})
-export class App {
-  protected readonly title = signal('vite-angular');
-}*/
 
 import { Component } from '@angular/core';
 import { TaskFormComponent } from '../components/task-form.component';
