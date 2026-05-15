@@ -9,7 +9,7 @@ export class TaskService {
   private storage = inject(StorageService);
   // Signal que armazena a lista de atividades
   private tasksSignal = signal<Task[]>(this.loadFromStorage());
-
+  
   // Exposição pública do Signal (apenas leitura)
   tasks = this.tasksSignal.asReadonly();
 
